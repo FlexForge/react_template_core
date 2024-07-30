@@ -7,6 +7,7 @@ module.exports = {
   trailingComma: 'es5',
   importOrder: [
     '^(react/(.*)$)|^(react$)',
+    '',
     '^(react-(.*)$)',
     '<THIRD_PARTY_MODULES>',
     '',
