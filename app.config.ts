@@ -40,6 +40,26 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     favicon: './assets/favicon.png',
     bundler: 'metro',
   },
+  plugins: [
+    [
+      'app-icon-badge',
+      {
+        enabled: Env.APP_ENV !== 'production',
+        badges: [
+          {
+            text: Env.APP_ENV,
+            type: 'banner',
+            color: 'white',
+          },
+          {
+            text: Env.VERSION.toString(),
+            type: 'ribbon',
+            color: 'white',
+          },
+        ],
+      },
+    ],
+  ],
   extra: {
     ...ClientEnv,
   },
