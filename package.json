@@ -3,21 +3,25 @@
   "version": "0.0.0",
   "main": "expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "app-release": "np --no-publish --no-cleanup --no-release-draft",
+    "start": "cross-env EXPO_NO_DOTENV=1 expo start",
+    "prebuild": "cross-env EXPO_NO_DOTENV=1 pnpm expo prebuild",
+    "android": "cross-env EXPO_NO_DOTENV=1 expo start --android",
+    "ios": "cross-env EXPO_NO_DOTENV=1 expo start --ios",
+    "app-release": "cross-env SKIP_BRANCH_PROTECTION=true np --no-publish --no-cleanup --no-release-draft",
     "version": "pnpm run prebuild && git add ."
   },
   "dependencies": {
     "expo": "~51.0.23",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-native": "0.74.3",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
     "np": "^10.0.7",
     "typescript": "^5.1.3"
   },
