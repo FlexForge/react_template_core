@@ -1,7 +1,7 @@
 {
   "name": "react_template_core",
   "version": "0.0.1",
-  "main": "./app.tsx",
+  "main": "./index.tsx",
   "scripts": {
     "start": "cross-env EXPO_NO_DOTENV=1 expo start",
     "prebuild": "cross-env EXPO_NO_DOTENV=1 pnpm expo prebuild",
