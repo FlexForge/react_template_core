@@ -41,6 +41,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     bundler: 'metro',
   },
   plugins: [
+    'expo-router',
     [
       'app-icon-badge',
       {
