@@ -1,10 +1,11 @@
+import React from 'react'
+
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function TabTwoScreen() {
+export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Tab Two</Text>
-      <View style={styles.separator} />
+      <Text>This is the soon to be settings</Text>
     </View>
   )
 }
@@ -12,16 +13,8 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
   },
 })
