@@ -1,6 +1,6 @@
 {
   "name": "react_template_core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "./index.tsx",
   "scripts": {
     "start": "cross-env EXPO_NO_DOTENV=1 expo start",
