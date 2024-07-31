@@ -20,6 +20,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format:check": "prettier . --check",
     "format:write": "prettier . --write",
+    "type-check": "tsc  --noemit",
     "prepare": "husky"
   },
   "dependencies": {
