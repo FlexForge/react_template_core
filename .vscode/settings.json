@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": true,
   // Disables the Minimap
   "editor.minimap.enabled": false,
   // Only renders whitespace when a portion of text is selected
