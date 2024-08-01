@@ -1,4 +1,4 @@
-name: Lint TS (eslint, prettier)
+name: Lint TS (sematic pull-request, eslint, prettier)
 
 on:
   push:

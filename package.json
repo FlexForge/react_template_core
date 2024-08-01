@@ -7,6 +7,8 @@
     "prebuild": "cross-env EXPO_NO_DOTENV=1 pnpm expo prebuild",
     "android": "cross-env EXPO_NO_DOTENV=1 expo run:android",
     "ios": "cross-env EXPO_NO_DOTENV=1 expo run:ios",
+    "doctor": "npx expo-doctor@latest",
+    "preinstall": "npx only-allow pnpm",
     "start:staging": "cross-env APP_ENV=staging pnpm run start",
     "prebuild:staging": "cross-env APP_ENV=staging pnpm run prebuild",
     "android:staging": "cross-env APP_ENV=staging pnpm run android",
@@ -15,6 +17,7 @@
     "prebuild:production": "cross-env APP_ENV=production pnpm run prebuild",
     "android:production": "cross-env APP_ENV=production pnpm run android",
     "ios:production": "cross-env APP_ENV=production pnpm run ios",
+    "postinstall": "husky",
     "app-release": "cross-env SKIP_BRANCH_PROTECTION=true np --no-publish --yolo --no-release-draft",
     "version": "pnpm run prebuild && git add .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -25,7 +28,7 @@
   },
   "dependencies": {
     "app-icon-badge": "^0.0.15",
-    "expo": "~51.0.23",
+    "expo": "~51.0.24",
     "expo-constants": "~16.0.2",
     "expo-linking": "~6.3.1",
     "expo-router": "~3.5.20",
@@ -55,7 +58,7 @@
     "husky": "^9.1.4",
     "np": "^10.0.7",
     "prettier": "3.3.3",
-    "typescript": "5.1.3"
+    "typescript": "5.3.3"
   },
   "packageManager": "pnpm@9.6.0"
 }
